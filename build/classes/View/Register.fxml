@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+    <stylesheets>
+        <URL value="@/CSS/register.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="700.0">
+         <left>
+            <AnchorPane id="background_left" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" stylesheets="@../CSS/register.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="59.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STORE MANAGEMENT">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOME" layoutX="129.0" layoutY="203.0" size="100" />
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIcon fill="#0589ff" glyphName="USER" layoutX="159.0" layoutY="65.0" size="40" />
+                  <Text fill="#0598ff" layoutX="138.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField id="firstnameField" fx:id="firstnameField" layoutX="139.0" layoutY="123.0" prefHeight="25.0" prefWidth="200.0" promptText="Firstname" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField id="middlenameField" fx:id="middlenameField" layoutX="139.0" layoutY="158.0" prefHeight="25.0" prefWidth="200.0" promptText="Middlename" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField id="lastnameField" fx:id="lastnameField" layoutX="139.0" layoutY="193.0" prefWidth="200.0" promptText="Lastname" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField id="emailField" fx:id="emailField" layoutX="139.0" layoutY="228.0" prefWidth="200.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField id="phoneField" fx:id="phoneField" layoutX="139.0" layoutY="260.0" prefWidth="200.0" promptText="Phone" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField id="addressField" fx:id="addressField" layoutX="139.0" layoutY="296.0" prefWidth="200.0" promptText="Address" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <Label layoutX="14.0" layoutY="117.0" text="FirstName:" />
+                  <Label layoutX="14.0" layoutY="152.0" text="MiddleName:" />
+                  <Label layoutX="14.0" layoutY="187.0" text="LastName:" />
+                  <Label layoutX="14.0" layoutY="222.0" text="Email:" />
+                  <Label layoutX="14.0" layoutY="254.0" text="Phone:" />
+                  <Label layoutX="14.0" layoutY="290.0" text="Address:" />
+                  <Label layoutX="14.0" layoutY="325.0" text="Password:" />
+                  <Label layoutX="14.0" layoutY="362.0" text="Password Confirm:" />
+                  <Button id="btn_register" fx:id="btn_Register" layoutX="138.0" layoutY="396.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #0598ff;" text="Register" textFill="WHITE" />
+                  <Hyperlink id="link_login" fx:id="link_login" layoutX="146.0" layoutY="448.0" text="I have account" onAction="#goToLoginPage" />
+                  <PasswordField id="passwordField" fx:id="passwordField" layoutX="139.0" layoutY="329.0" prefHeight="25.0" prefWidth="198.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <PasswordField id="password_confirmField" fx:id="password_confirmField" layoutX="139.0" layoutY="358.0" prefHeight="25.0" prefWidth="197.0" promptText="Password Confirm" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

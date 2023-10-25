@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    b.table-view .table-cell {
+        -fx-alignment: CENTER;
+    }
+
+    /* Optional: If you want to center-align the column headers */
+    .table-view .column-header {
+        -fx-alignment: CENTER;
+    }
+}
